@@ -1,13 +1,5 @@
-nav {
-	font-family: Inter;
-}
-
 * {
-	font-family: Nunito Sans;
-}
-
-.my-img {
-	width: 250px;
+	font-family: "Poppins";
 }
 
 #navbarNav {
@@ -29,10 +21,6 @@ html {
  	margin-right: 0 !important;
 }
 
-#tools {
-    background-color: #bebebe;
-}
-
 .card {
   display: flex;
   justify-content: space-between;
@@ -50,4 +38,80 @@ html {
   transform: scale(1);
 }
 
+/* New CSS */
+.navbar, footer {
+	background-color: #2A0B2D;
+}
+
+#landing {
+	background-color: #3E3353;
+	background-image: url("./images/pexels.jpg");
+	object-fit: cover;
+
+	.flex-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.description {
+		padding: 5rem;
+	}
+}
+
+
+/* Media Queries */
+@media (max-width: 576px) {
+	.flex-container {
+		flex-direction: column !important;
+	}
+
+	.description {
+		padding: 1rem !important;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+	.description {
+		padding: 2rem !important;
+	}
+} 
+
+.profile-img {
+	max-width: 350px !important;
+	height: auto;
+}
+
+#projects {
+	background: rgb(20,22,19);
+	background: linear-gradient(180deg, rgba(20,22,19,1) 0%, rgba(62,51,83,1) 53%, rgba(105,86,143,1) 100%);
+	color: white;
+
+	.card {
+		color: black;
+	}
+}
+
+#tools {
+	background: rgb(105,86,143);
+	background: linear-gradient(180deg, rgba(105,86,143,1) 0%, rgba(116,128,124,1) 100%);
+	color: white;
+}
+
+#contact {
+	background: rgb(116,128,124);
+	background: linear-gradient(180deg, rgba(116,128,124,1) 0%, rgba(140,159,139,1) 100%);
+	color: white;
+
+	.fa {
+		color: white;
+		font-size: 4rem !important;
+	}
+}
+
+#map {
+	background: rgb(140,159,139);
+	background: linear-gradient(180deg, rgba(140,159,139,1) 0%, rgba(217,194,153,1) 100%);
+	color: white;
+}
 
