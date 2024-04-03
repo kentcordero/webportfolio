@@ -1,0 +1,53 @@
+nav {
+	font-family: Inter;
+}
+
+* {
+	font-family: Nunito Sans;
+}
+
+.my-img {
+	width: 250px;
+}
+
+#navbarNav {
+	display: flex;
+	justify-content: right;
+}
+
+#google-map {
+	height: 60vh;
+	width: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.row {
+	margin-left: 0 !important;
+ 	margin-right: 0 !important;
+}
+
+#tools {
+    background-color: #bebebe;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card  {
+  transform: scale(1);
+}
+
+
