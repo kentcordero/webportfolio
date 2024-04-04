@@ -1,117 +1,112 @@
 * {
-	font-family: "Poppins";
+    font-family: "Poppins";
 }
 
-#navbarNav {
-	display: flex;
-	justify-content: right;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#google-map {
-	height: 60vh;
-	width: 100%;
-}
-
-html {
-	scroll-behavior: smooth;
+.my-name {
+    order: -1;
+    margin-right: auto;
 }
 
 .row {
-	margin-left: 0 !important;
- 	margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 .card {
-  display: flex;
-  justify-content: space-between;
-}
-
-.card {
-  transition: transform 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .card  {
-  transform: scale(1);
+    transform: scale(1);
 }
 
-/* New CSS */
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar, footer {
-	background-color: #2A0B2D;
+    background-color: #2A0B2D;
 }
 
 #landing {
-	background-color: #3E3353;
-	background-image: url("./images/pexels.jpg");
-	object-fit: cover;
-
-	.flex-container {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-	}
-
-	.description {
-		padding: 5rem;
-	}
+    background-color: #3E3353;
+    background-image: url("./images/pexels.jpg");
+    object-fit: cover;
 }
 
-
-/* Media Queries */
-@media (max-width: 576px) {
-	.flex-container {
-		flex-direction: column !important;
-	}
-
-	.description {
-		padding: 1rem !important;
-	}
+#landing .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-@media (max-width: 768px) and (min-width: 577px) {
-	.description {
-		padding: 2rem !important;
-	}
-} 
+#landing .description {
+    padding: 5rem;
+}
 
 .profile-img {
-	max-width: 350px !important;
-	height: auto;
+    max-width: 350px !important;
+    height: auto;
 }
 
 #projects {
-	background: rgb(20,22,19);
-	background: linear-gradient(180deg, rgba(20,22,19,1) 0%, rgba(62,51,83,1) 53%, rgba(105,86,143,1) 100%);
-	color: white;
+    background: linear-gradient(180deg, rgba(20,22,19,1) 0%, rgba(62,51,83,1) 53%, rgba(105,86,143,1) 100%);
+    color: white;
+}
 
-	.card {
-		color: black;
-	}
+#projects .card {
+    color: black;
 }
 
 #tools {
-	background: rgb(105,86,143);
-	background: linear-gradient(180deg, rgba(105,86,143,1) 0%, rgba(116,128,124,1) 100%);
-	color: white;
+    background: linear-gradient(180deg, rgba(105,86,143,1) 0%, rgba(116,128,124,1) 100%);
+    color: white;
 }
 
 #contact {
-	background: rgb(116,128,124);
-	background: linear-gradient(180deg, rgba(116,128,124,1) 0%, rgba(140,159,139,1) 100%);
-	color: white;
+    background: linear-gradient(180deg, rgba(20,22,19,1) 0%, rgba(62,51,83,1) 53%, rgba(105,86,143,1) 100%);
+    color: white;
+}
 
-	.fa {
-		color: white;
-		font-size: 4rem !important;
-	}
+#contact .fa {
+    color: white;
+    font-size: 2rem !important;
 }
 
 #map {
-	background: rgb(140,159,139);
-	background: linear-gradient(180deg, rgba(140,159,139,1) 0%, rgba(217,194,153,1) 100%);
-	color: white;
+    background: linear-gradient(180deg, rgba(140,159,139,1) 0%, rgba(217,194,153,1) 100%);
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+}
+
+.footer div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer div:first-child {
+    margin-left: 0;
+}
+
+.contactInfo a {
+    text-decoration: none;
+    color: inherit; 
 }
 
