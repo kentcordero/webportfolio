@@ -110,3 +110,7 @@ html {
     color: inherit; 
 }
 
+.btn-clr {
+    background: linear-gradient(180deg, rgba(20,22,19,1) 0%, rgba(62,51,83,1) 53%, rgba(105,86,143,1) 100%);
+    color: white;
+}
